@@ -29,20 +29,20 @@
 
 ### 直接使用（无需安装）
 
-1. 打开 `dist/index.html`（双击即可，或拖进任意浏览器窗口）
+1. 打开 `docs/index.html`（双击即可，或拖进任意浏览器窗口）
 2. 拖入 PDF，等待分析
 3. 进入四联预览，切换质量档、查看画质与预计体积
 4. 点击「应用并压缩」，等待完成
 5. 下载 `原名_压缩版.pdf`
 
-> 也可以把 `dist/index.html` 单独发给别人，或部署到 GitHub Pages / 任意静态托管，一个文件就是完整应用。
+> 也可以把 `docs/index.html` 单独发给别人，或部署到 GitHub Pages / 任意静态托管，一个文件就是完整应用。
 
 ### 开发 / 构建
 
 ```bash
 npm install       # 安装依赖
 npm run dev       # 启动开发服务器
-npm run build     # 打包为单文件 dist/index.html
+npm run build     # 打包为单文件 docs/index.html
 npm run smoke     # 运行冒烟测试
 ```
 
@@ -54,7 +54,7 @@ npm run smoke     # 运行冒烟测试
 |---|---|---|
 | UI | React 18 + TypeScript | 四联预览、控制面板、进度/结果页 |
 | 构建 | Vite 6 + `vite-plugin-singlefile` | 全部依赖内联成单个 HTML 文件 |
-| PDF 渲染 | pdf.js（pdfjs-dist，Apache-2.0） | 本地解析 PDF、把每页渲染成位图 |
+| PDF 渲染 | pdf.js（pdfjs-docs，Apache-2.0） | 本地解析 PDF、把每页渲染成位图 |
 | PDF 重建 | pdf-lib（MIT） | 把压缩后的页面 JPEG 按原页面尺寸重组为新 PDF |
 | 图片编码 | 浏览器原生 Canvas `toBlob('image/jpeg')` | JPEG 压缩（自动剥离元数据） |
 | 解压 | pako（MIT） | Flate 数据解压（供分析用） |
