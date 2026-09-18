@@ -1,6 +1,6 @@
 # PDF Compressor · 本地 PDF 压缩工具
 
-使用链接:https://muz777.github.io/PDF-/
+使用链接:[https://muz777.github.io/PDF-/](https://muz777.github.io/PDF-Compressor/)
 
 一个**纯本地、单文件、跨平台**的 PDF 压缩工具。借鉴 Adobe Photoshop「存储为 Web 所用格式」的**四联预览**思路，让你在压缩前直观比较不同质量的画质与体积，选定后一键压缩整个 PDF，自动把体积控制在目标大小以内（默认 ≤ 15 MB）。
 
